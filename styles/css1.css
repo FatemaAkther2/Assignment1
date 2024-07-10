@@ -107,7 +107,8 @@
 }
 
 .faise{
-  margin-left: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .text h2 {
@@ -172,6 +173,7 @@
   justify-content: center;
   border: 1px solid #ccc; /* Add a 1px border on all sides */
   border-radius: 10px; /* Add border radius to the container */
+  margin-top: 20px;
   margin-left: 230px;
   margin-right: 230px;
   padding: 20px; /* Equal padding on all sides */
@@ -198,6 +200,8 @@
 .description {
   font-size: 1.2rem;
   margin-bottom: 40px;
+  margin-left: 280px;
+  margin-right: 200px;
 }
 
 .columns {
@@ -265,6 +269,7 @@
     padding: 0;
     background-image: url('../images/handshake.jpg');
     background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.2);  */
     background-position: center;
     /* height: 100vh; */
     display: flex;
@@ -274,7 +279,8 @@
 
 .container4 {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7); /* Light white background */
+  /* background-color: rgba(255, 255, 255, 0.7); Light white background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin-right: 200px;
   margin-left: 200px;
@@ -349,6 +355,9 @@ button:hover {
 .bg-se{
   background-color: rgba(13, 19, 33, 0.03); 
 }
+
+
+
 
 footer {
   /* background-color: #fff; Change background color to white */
