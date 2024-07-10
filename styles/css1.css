@@ -172,7 +172,8 @@
   justify-content: center;
   border: 1px solid #ccc; /* Add a 1px border on all sides */
   border-radius: 10px; /* Add border radius to the container */
-  padding: 20px; /* Optional: Add padding */
+  padding: 20px; /* Equal padding on all sides */
+  /* box-sizing: border-box; Include padding and border in the element's total width and height */
 }
 
 .video iframe {
