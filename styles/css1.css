@@ -6,73 +6,108 @@
       "wdth" 100;
   }
 
-.header{
-  height: 1450px;
+  body {
+    margin: 0px;
+    padding: 0;
+}
 
-  background-image: url('../images/Hero-bg.png');
-  background-repeat: no-repeat;
-  /* width: 100%; */
-  /* background-position: center;
-  background-size: cover; */
+.header {
+    /* height: 1450px;  */
+    /* Adjust height as needed */
+    background-image: url('../images/Hero-bg.png');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
-  text-align: center;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); Light white background */
+    /* padding: 2%; */
+    border-radius: 10px;
+    max-width: 800px; /* Adjust max-width as needed */
 }
 
 .center-image {
-  margin-top: 100px;
-  max-width: 100%;
-  height: auto;
+  margin-top: 30px;
+    max-width: 100%;
+    /* height: auto; */
 }
 
 .center-heading {
-  font-size: 2.5rem;
-  margin-top: 20px;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: black; /* Change heading color to black */
 }
 
 .center-paragraph {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black; /* Change paragraph color to black */
 }
 
 .center-button {
   font-size: 1rem;
-  padding: 10px 20px;
-  background-color: #007BFF;
+  padding: 20px 40px;
+  background-color: black; /* Set button background color to black */
   color: white;
   border: none;
   border-radius: 5px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure button behaves as block */
 }
 
 .center-button:hover {
-  background-color: #0056b3;
+  background-color: #3b2b2b; /* Darken button on hover */
 }
 
 .center-text {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .container1 {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #ffffff; /* PROBLEM IS HERE*/
+  /* box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1); */
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.niji {
+  background-color: rgba(13, 19, 33, 0.02); /* 2% opacity of #0D1321 */
 }
 
 .row {
   display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+  /* align-items: center; */
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #ffffff;
+ 
 }
 
 .text {
+  margin-left: 30px;
   flex: 1;
-  padding-right: 20px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.faise{
+  margin-left: 50px;
 }
 
 .text h2 {
@@ -88,21 +123,21 @@
 .text button {
   font-size: 1rem;
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background-color: white; /* White background */
+  color: black; /* Black text color */
+  border: 2px solid black; /* Black border */
+  border-radius: 1px;
+  /* cursor: pointer; */
+  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 .text button:hover {
-  background-color: #0056b3;
+  /* background-color: black; Black background on hover */
+  color: white; /* White text color on hover */
 }
-
 .image {
   flex: 1;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .image img {
@@ -127,16 +162,27 @@
 
 .content p {
   font-size: 1.2rem;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .video {
   display: flex;
   justify-content: center;
+  border: 1px solid #ccc; /* Add a 1px border on all sides */
+  border-radius: 10px; /* Add border radius to the container */
+  padding: 20px; /* Optional: Add padding */
+}
+
+.video iframe {
+  border-radius: 10px; /* Add border radius to the YouTube video */
 }
 
 
 .container3 {
-  text-align: center;
+  margin-top: 30px;
+  /* text-align: center; */
   max-width: 1200px;
   padding: 20px;
 }
@@ -152,6 +198,9 @@
 }
 
 .columns {
+  padding: 20px;
+  margin-left: 200px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -167,15 +216,15 @@
 }
 
 .column-1 {
-  background-color: #e0f7fa;
+  background-color: rgba(255, 76, 30, 0.05); /* 5% opacity */
 }
 
 .column-2 {
-  background-color: #e8f5e9;
+  background-color: rgba(0, 93, 232, 0.05); /* 5% opacity */
 }
 
 .column-3 {
-  background-color: #fff3e0;
+  background-color: rgba(255, 223, 0, 0.05); /* 5% opacity */
 }
 
 .column img {
@@ -197,13 +246,14 @@
 
 .column a {
   font-size: 1rem;
-  color: #007BFF;
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 
 .column a:hover {
-  color: #0056b3;
+  color: black;
+  text-decoration: underline;
 }
 
 
@@ -223,7 +273,10 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.7); /* Light white background */
   padding: 20px;
-  border-radius: 10px;
+  margin-right: 200px;
+  margin-left: 200px;
+  border-radius: 20px;
+  margin-bottom: 100px;
 }
 
 .content4 {
@@ -232,7 +285,7 @@
 
 .content4 h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .content4 p {
@@ -246,34 +299,64 @@ form {
   align-items: center;
 }
 
-input[type="text"] {
-  padding: 10px;
-  font-size: 1rem;
+/*input[type="text"] {
+  padding: 20px;
+  font-size: 2rem;
   border: none;
   border-radius: 5px 0 0 5px;
+}
+*/
+
+.input-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 70%; /*Ensure the container is 50% of the page width */
+}
+
+input[type="text"] {
+  height: 54px;
+  border-radius: 5px 5px 5px 5px; /* Only round the left corners */
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+  box-sizing: border-box;
+  margin-left: 200px;
+  margin-right: 5px; /* Small gap between the input and button */
 }
 
 button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
+  background-color: white; /* Change button background to white */
+  color: black; /* Change text color to black */
+  border: 1px solid #ccc; /* Match input field border */
+  border-radius: 5px 5px 5px 5px; /* Only round the right corners */
+  height: 54px; /* Match input field height */
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e0e0e0; /* Light grey background on hover */
 }
 
 
+.bg-se{
+  background-color: rgba(13, 19, 33, 0.03); 
+}
+
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  /* background-color: #fff; Change background color to white */
+/* 3% opacity of #0D1321 */
+ 
+  /* color: #333; Default text color to a darker shade */
+  padding: 10px;
   text-align: center;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  border-top: 0px solid #ccc; /* Optional: Add a border at the top for separation */
 }
 
 .footer-content {
@@ -285,16 +368,20 @@ footer {
 .footer-title {
   flex: 1; /* Takes up remaining space */
   text-align: left;
+  margin-left: 200px;
+  color: #000; /* Change title font color to black */
+  margin: 0 100px; /* Add margin for spacing */
 }
 
 .footer-icons {
   flex: 1; /* Takes up remaining space */
   text-align: right;
+  margin: 0 100px; /* Add margin for spacing */
 }
 
 .footer-icons a {
   display: inline-block;
-  margin-left: 10px; /* Adjust margin as needed */
+  margin-left: 30px; /* Adjust margin as needed */
 }
 
 .footer-icons img {
